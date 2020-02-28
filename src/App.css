@@ -32,6 +32,10 @@
   padding: 20px 0px 0px 0px;
 }
 
+.alternate {
+  background-color: #fbfbfb;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

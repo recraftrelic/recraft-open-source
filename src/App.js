@@ -37,15 +37,15 @@ const teamMemebers = [
   {
      image: developer,
      title: "Yogesh Kapoor",
-     bio: "I am a Frontend Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me at Medium.",
+     bio: "I am a Software Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me at Medium.",
      link1: "https://github.com/yashkapoor8710",
-     link2: "",
+     link2: "https://www.linkedin.com/in/yogesh-kapoor-05a86819b/",
      link3: ""
   },
   {
     image: developer,
     title: "Manoj Singh",
-    bio: "I am a Frontend Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me at Medium.",
+    bio: "Thinker & Javascript developer from Chandigarh. I love JavaScript and mostly spend my day programming in JavaScript, ReactJs Nodejs solving problems.",
     link1: "https://github.com/manojsinghnegiwd",
     link2: "https://in.linkedin.com/in/manojsinghnegiwd",
     link3: "http://www.manojsinghnegi.com/"
@@ -53,7 +53,7 @@ const teamMemebers = [
   {
     image: developer,
     title: "Puran Chand",
-    bio: "I am a Frontend Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me at Medium.",
+    bio: "I am Frontend Developer, designer and definitely a tech enthusiast, This website is about my life, my work and my hobbies I hope you will find something interesting here!",
     link1: "https://github.com/puranchand",
     link2: "https://www.linkedin.com/in/puran-chand-130670124/",
     link3: "http://www.puranchand.com/"
@@ -63,12 +63,12 @@ const teamMemebers = [
 function App() {
   return (
     <div className="App">
-      <section className="section">
+      <section className="section" style={{paddingBottom: 0}}>
         <div className="container">
-          <p className="level-item has-text-centered">
-            <figure className="image is-48x48">
+          <p className="level-item ">
+            <figure className="image is-128x128">
               <img src={logo} alt="logo" />
-            </figure><h1 className="title">&nbsp;Recraft Relic</h1>
+            </figure>
           </p>
         </div>
       </section>
@@ -84,7 +84,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section" style={{paddingBottom: 50, paddingTop: 10}}>
         <div className="container">
           <p className="level-item has-text-centered">
             <h1 className="title is-size-1">Open source Projects</h1>
@@ -106,7 +106,7 @@ function App() {
           fullAlign = "column is-12"
         }
 
-        return <section className="section">
+        return <section className={index == 0 || index == 2 ? "section alternate" : "section"}>
             <div className="container">
               <div className="columns is-mobile is-centered">
                 <div className="column is-8">
@@ -116,7 +116,7 @@ function App() {
                     </figure>
                   </div>
                   <div className={fullAlign}>
-                    <h1 className="title has-text-left extra-space">{data.heading}</h1>
+                    <h1 className="title has-text-left extra-space"><a className="is-text has-text-black" href={data.link}>{data.heading}</a></h1>
                     <p className="bd-notification is-primary has-text-left is-size-5">{data.para1}</p>
                     <p className="bd-notification is-primary has-text-left is-size-5">{data.para2}</p>
                     <div class="columns is-gap extra-space">
@@ -145,7 +145,7 @@ function App() {
         } 
       )}
 
-      <section className="section">
+      <section className="section" style={{paddingTop: 50, paddingBottom: 0}}>
         <div className="container">
           <p className="level-item has-text-centered">
             <h1 className="title is-size-1">Team Members</h1>
@@ -171,9 +171,9 @@ function App() {
                       </div>
                     </div>
                     <footer class="card-footer">
-                      <a href={data.link1} class="card-footer-item"><span class="icon"><i class="fa fa-github"></i></span></a>
-                      <a href={data.link2} class="card-footer-item"><span class="icon"><i class="fa fa-linkedin"></i></span></a>
-                      <a href={data.link3} class="card-footer-item"><span class="icon"><i class="fa fa-globe"></i></span></a>
+                      <a href={data.link1} class="card-footer-item"><span class="icon has-text-black"><i class="fa fa-github"></i></span></a>
+                      <a href={data.link2} class="card-footer-item"><span class="icon has-text-info"><i class="fa fa-linkedin"></i></span></a>
+                      {index == 0 ? null : <a href={data.link3} class="card-footer-item"><span class="icon has-text-success"><i class="fa fa-globe"></i></span></a>}
                     </footer>
                   </div>
                 </div>
