@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './favicon.ico';
 import chatApp from './chat-app.png';
 import baseApp from './base-app.png';
-import multiMessengerApp from './multi-messenger-app.png';
+import multiMessengerApp from './multi-app.png';
 import developer from './developer.jpg';
 import react from './react.png';
 import javascript from './js.png';
@@ -39,24 +39,24 @@ const teamMemebers = [
      title: "Yogesh Kapoor",
      bio: "I am a Frontend Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me at Medium.",
      link1: "https://github.com/yashkapoor8710",
-     link2: "https://medium.com/@yashkapoor8710",
-     link3: "https://gitlab.com/yashkapoor8710"
+     link2: "",
+     link3: ""
   },
   {
     image: developer,
     title: "Manoj Singh",
     bio: "I am a Frontend Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me at Medium.",
-    link1: "https://github.com/yashkapoor8710",
-    link2: "https://medium.com/@yashkapoor8710",
-    link3: "https://gitlab.com/yashkapoor8710"
+    link1: "https://github.com/manojsinghnegiwd",
+    link2: "https://in.linkedin.com/in/manojsinghnegiwd",
+    link3: "http://www.manojsinghnegi.com/"
   },
   {
     image: developer,
     title: "Puran Chand",
     bio: "I am a Frontend Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me at Medium.",
-    link1: "https://github.com/yashkapoor8710",
-    link2: "https://medium.com/@yashkapoor8710",
-    link3: "https://gitlab.com/yashkapoor8710"
+    link1: "https://github.com/puranchand",
+    link2: "https://www.linkedin.com/in/puran-chand-130670124/",
+    link3: "http://www.puranchand.com/"
   }
 ]
 
@@ -77,7 +77,7 @@ function App() {
           <div className="columns is-mobile is-centered">
             <div className="column is-8">
               <h1 className="title">Help out your favorite open source projects and become a better developer while doing it.</h1>
-              <h2 className="subtitle">
+              <h2 className="subtitle extra-space">
                 Pick your favorite repos to receive a different open issue in your inbox every day. Fix the issue and everybody wins. 51,916 developers are working on 5,166 open source repos using CodeTriage.
               </h2>
             </div>
@@ -87,22 +87,35 @@ function App() {
       <section className="section">
         <div className="container">
           <p className="level-item has-text-centered">
-            <h1 className="title">Open source Projects</h1>
+            <h1 className="title is-size-1">Open source Projects</h1>
           </p>
         </div>
       </section>
 
       {projects.map((data, index) => {
+        let leftAlign = "column is-4 is-pulled-left"
+        let fullAlign = "column is-8 is-pulled-right"
+
+        if(index == 1) {
+          leftAlign = "column is-4 is-pulled-right"
+          fullAlign = "column is-8 is-pulled-left"
+        }
+
+        if(index == 2) {
+          leftAlign = "column is-12"
+          fullAlign = "column is-12"
+        }
+
         return <section className="section">
             <div className="container">
               <div className="columns is-mobile is-centered">
                 <div className="column is-8">
-                  <div className={index == 1 ? "column is-4 is-pulled-right" : "column is-4 is-pulled-left"}>
+                  <div className={leftAlign}>
                     <figure className="image is-256x256">
                       <img src={data.image} alt="logo" />
                     </figure>
                   </div>
-                  <div className={index == 1 ? "column is-8 is-pulled-left" : "column is-8 is-pulled-right"}>
+                  <div className={fullAlign}>
                     <h1 className="title has-text-left extra-space">{data.heading}</h1>
                     <p className="bd-notification is-primary has-text-left is-size-5">{data.para1}</p>
                     <p className="bd-notification is-primary has-text-left is-size-5">{data.para2}</p>
@@ -123,7 +136,7 @@ function App() {
                           </figure>
                       </div>
                     </div>
-                    <p className="bd-notification is-primary has-text-left">Visit the <a className="is-text" href="link">github</a> for more details.</p>
+                    <p className="bd-notification is-primary has-text-left">If you want to contribute to our project and make it better, visit our github link. <br></br><a className="is-text" href="link">{data.link}</a></p>
                   </div>
                 </div>
               </div>
@@ -135,7 +148,7 @@ function App() {
       <section className="section">
         <div className="container">
           <p className="level-item has-text-centered">
-            <h1 className="title">Team Members</h1>
+            <h1 className="title is-size-1">Team Members</h1>
           </p>
         </div>
       </section>
@@ -158,9 +171,9 @@ function App() {
                       </div>
                     </div>
                     <footer class="card-footer">
-                      <a href={data.link1} class="card-footer-item">Gitub</a>
-                      <a href={data.link2} class="card-footer-item">Medium</a>
-                      <a href={data.link3} class="card-footer-item">Gitlab</a>
+                      <a href={data.link1} class="card-footer-item"><span class="icon"><i class="fa fa-github"></i></span></a>
+                      <a href={data.link2} class="card-footer-item"><span class="icon"><i class="fa fa-linkedin"></i></span></a>
+                      <a href={data.link3} class="card-footer-item"><span class="icon"><i class="fa fa-globe"></i></span></a>
                     </footer>
                   </div>
                 </div>
