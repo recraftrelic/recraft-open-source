@@ -78,7 +78,7 @@ function App() {
             <div className="column is-8">
               <h1 className="title">Help out your favorite open source projects and become a better developer while doing it.</h1>
               <h2 className="subtitle extra-space">
-                Pick your favorite repos to receive a different open issue in your inbox every day. Fix the issue and everybody wins. 51,916 developers are working on 5,166 open source repos using CodeTriage.
+              Pick your favorite repos to receive a different open issue in your inbox every day. Fix the issue and everybody wins. 51,916 developers are working on 5,166 open source repos using CodeTriage.
               </h2>
             </div>
           </div>
@@ -119,18 +119,18 @@ function App() {
                     <h1 className="title has-text-left extra-space"><a className="is-text has-text-black" href={data.link}>{data.heading}</a></h1>
                     <p className="bd-notification is-primary has-text-left is-size-5">{data.para1}</p>
                     <p className="bd-notification is-primary has-text-left is-size-5">{data.para2}</p>
-                    <div class="columns is-gap extra-space">
-                      <div class="column is-1">
+                    <div className="columns is-gap extra-space">
+                      <div className="column is-1">
                           <figure className="image is-32x32">
                             <a href="https://reactnative.dev/"><img src={react} alt="logo" /></a>
                           </figure>
                       </div>
-                      <div class="column is-1">
+                      <div className="column is-1">
                           <figure className="image is-32x32">
                             <a href="https://nodejs.org/en/"><img src={javascript} alt="logo" /></a>
                           </figure>
                       </div>
-                      <div class="column is-1">
+                      <div className="column is-1">
                           <figure className="image is-32x32">
                             <a href="https://www.electronjs.org/">{index == 2 ? <img src={electron} alt="logo" /> : null}</a>
                           </figure>
@@ -158,22 +158,22 @@ function App() {
             <div className="column is-8">
               {teamMemebers.map((data, index) => {
               return <div className="column is-4 is-pulled-left">
-                  <div class="card">
-                    <header class="card-header">
+                  <div className="card">
+                    <header className="card-header">
                       <figure className="image is-256x256">
                         <img src={data.image} alt="logo" />
                       </figure>
                     </header>
-                    <div class="card-content">
-                      <div class="content">
+                    <div className="card-content">
+                      <div className="content">
                         <h2 className="sub-title">{data.title}</h2>
                         {data.bio}
                       </div>
                     </div>
-                    <footer class="card-footer">
-                      <a href={data.link1} class="card-footer-item"><span class="icon has-text-black"><i class="fa fa-github"></i></span></a>
-                      <a href={data.link2} class="card-footer-item"><span class="icon has-text-info"><i class="fa fa-linkedin"></i></span></a>
-                      {index == 0 ? null : <a href={data.link3} class="card-footer-item"><span class="icon has-text-success"><i class="fa fa-globe"></i></span></a>}
+                    <footer className="card-footer">
+                      <a href={data.link1} className="card-footer-item"><span className="icon has-text-black"><i className="fa fa-github"></i></span></a>
+                      <a href={data.link2} className="card-footer-item"><span className="icon has-text-info"><i className="fa fa-linkedin"></i></span></a>
+                      {index == 0 ? null : <a href={data.link3} className="card-footer-item"><span className="icon has-text-success"><i className="fa fa-globe"></i></span></a>}
                     </footer>
                   </div>
                 </div>
