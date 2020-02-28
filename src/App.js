@@ -4,6 +4,9 @@ import chatApp from './chat-app.png';
 import baseApp from './base-app.png';
 import multiMessengerApp from './multi-messenger-app.png';
 import developer from './developer.jpg';
+import react from './react.png';
+import javascript from './js.png';
+import electron from './elctron.png';
 import './App.css';
 
 const projects = [
@@ -100,10 +103,27 @@ function App() {
                     </figure>
                   </div>
                   <div className={index == 1 ? "column is-8 is-pulled-left" : "column is-8 is-pulled-right"}>
-                    <h1 className="title has-text-left">{data.heading}</h1>
-                    <p className="bd-notification is-primary has-text-left">{data.para1}</p>
-                    <p className="bd-notification is-primary has-text-left">{data.para2}</p>
-                    <p className="bd-notification is-primary has-text-left"><a className="button is-text" href="link">github</a></p>
+                    <h1 className="title has-text-left extra-space">{data.heading}</h1>
+                    <p className="bd-notification is-primary has-text-left is-size-5">{data.para1}</p>
+                    <p className="bd-notification is-primary has-text-left is-size-5">{data.para2}</p>
+                    <div class="columns is-gap extra-space">
+                      <div class="column is-1">
+                          <figure className="image is-32x32">
+                            <a href="https://reactnative.dev/"><img src={react} alt="logo" /></a>
+                          </figure>
+                      </div>
+                      <div class="column is-1">
+                          <figure className="image is-32x32">
+                            <a href="https://nodejs.org/en/"><img src={javascript} alt="logo" /></a>
+                          </figure>
+                      </div>
+                      <div class="column is-1">
+                          <figure className="image is-32x32">
+                            <a href="https://www.electronjs.org/">{index == 2 ? <img src={electron} alt="logo" /> : null}</a>
+                          </figure>
+                      </div>
+                    </div>
+                    <p className="bd-notification is-primary has-text-left">Visit the <a className="is-text" href="link">github</a> for more details.</p>
                   </div>
                 </div>
               </div>
