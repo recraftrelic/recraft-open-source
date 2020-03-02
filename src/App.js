@@ -47,7 +47,12 @@ function App() {
                 let leftAlign = "column is-4 is-pulled-left"
                 let fullAlign = "column is-8 is-pulled-right"
 
-                if(index == 1) {
+                if(index %2 == 0) {
+                  leftAlign = "column is-4 is-pulled-left"
+                  fullAlign = "column is-8 is-pulled-right"
+                }
+
+                if(index %2 == 1) {
                   leftAlign = "column is-4 is-pulled-right"
                   fullAlign = "column is-8 is-pulled-left"
                 }
@@ -57,7 +62,7 @@ function App() {
                   fullAlign = "column is-12"
                 }
                 return <>
-                  <section className={index == 0 || index == 2 ? "section alternate" : "section"}>
+                  <section className={index %2 == 0 ? "section alternate" : "section"}>
                     <div className="container">
                       <div className="columns is-mobile is-centered">
                         <div className="column is-8">
