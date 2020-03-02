@@ -35,7 +35,7 @@ function App() {
       {
         dynamicData.projectSection.map((data,index) => {
           return <>
-            <section className="section" style={{paddingBottom: 50, paddingTop: 10}}>
+            <section className="section project" style={{paddingBottom: 50, paddingTop: 10}}>
               <div className="container">
                 <p className="level-item has-text-centered">
                   <h1 className="title is-size-1">{data.heading}</h1>
@@ -114,7 +114,7 @@ function App() {
       {
         dynamicData.teamSection.map((data,index) => {
           return <>
-            <section className="section" style={{paddingTop: 50, paddingBottom: 0}}>
+            <section className="section team" style={{paddingTop: 50, paddingBottom: 0}}>
               <div className="container">
                 <p className="level-item has-text-centered">
                   <h1 className="title is-size-1">{data.heading}</h1>
