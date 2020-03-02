@@ -1,0 +1,155 @@
+{
+    "mainSection" : [
+        {
+            "logo": "logo.png",
+            "heading": "Help out your favorite open source projects and become a better developer while doing it.",
+            "description": "Pick your favorite repos to receive a different open issue in your inbox every day. Fix the issue and everybody wins. 51,916 developers are working on 5,166 open source repos using CodeTriage."
+        }
+    ],
+    "projectSection" : [
+        {
+            "heading": "Open source Projects",
+            "projects": [
+                {
+                    "image": "chat-app.png",
+                    "heading": "React native chat app boilerplate",
+                    "mainDesc": "This chat app is a boilerplate for any react native developer who wants to build a chat app.",
+                    "secondDesc": "The goal of this boilerplate is to provide a fully functional chat app which can be reused with very little to no modification.",
+                    "technologies": [
+                        {
+                            "icon": "react.png",
+                            "link": "https://reactnative.dev/"
+                        },
+                        {
+                            "icon": "js.png",
+                            "link": "https://nodejs.org/en/"
+                        }
+                    ],
+                    "contribution": [
+                        {
+                            "desc": "If you want to contribute to our project and make it better, visit our github link.",
+                            "link": "https://github.com/recraftrelic/react-native-chat-app-boilerplate"
+                        }
+                    ]
+                },
+                {
+                    "image": "base-app.png",
+                    "heading": "React native base app seed",
+                    "mainDesc": "This base app is a boilerplate for any react native developer who wants to build a simple app.",
+                    "secondDesc": "The goal of this boilerplate is to provide a simple functional routing & theme app which can be reused with very little to no modification.",
+                    "technologies": [
+                        {
+                            "icon": "react.png",
+                            "link": "https://reactnative.dev/"
+                        },
+                        {
+                            "icon": "js.png",
+                            "link": "https://nodejs.org/en/"
+                        }
+                    ],
+                    "contribution": [
+                        {
+                            "desc": "If you want to contribute to our project and make it better, visit our github link.",
+                            "link": "https://github.com/recraftrelic/recraft-react-native-base-app-seed"
+                        }
+                    ]
+                },
+                {
+                    "image": "multi-app.png",
+                    "heading": "React multi messenger app electron boilerplate",
+                    "mainDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    "secondDesc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                    "technologies": [
+                        {
+                            "icon": "react.png",
+                            "link": "https://reactnative.dev/"
+                        },
+                        {
+                            "icon": "js.png",
+                            "link": "https://nodejs.org/en/"
+                        },
+                        {
+                            "icon": "elctron.png",
+                            "link": "https://www.electronjs.org/"
+                        }
+                    ],
+                    "contribution": [
+                        {
+                            "desc": "If you want to contribute to our project and make it better, visit our github link.",
+                            "link": "https://github.com/recraftrelic/multi-messenger-app"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "teamSection": [
+        {
+            "heading": "Team Members",
+            "teams": [
+                {
+                    "image": "yogesh.jpg",
+                    "title": "Yogesh Kapoor",
+                    "bio": "I am a Software Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me at Medium.",
+                    "socialIcons": [
+                        {
+                            "icon": "fa fa-github",
+                            "link": "https://github.com/yashkapoor8710",
+                            "color": "has-text-black"
+                        },
+                        {
+                            "icon": "fa fa-linkedin",
+                            "link": "https://www.linkedin.com/in/yogesh-kapoor-05a86819b/",
+                            "color": "has-text-info"
+                        }
+                    ]
+                },
+                {
+                    "image": "manoj.jpg",
+                    "title": "Manoj Singh",
+                    "bio": "Thinker & Javascript developer from Chandigarh. I love JavaScript and mostly spend my day programming in JavaScript, ReactJs Nodejs solving problems.",
+                    "socialIcons": [
+                        {
+                            "icon": "fa fa-github",
+                            "link": "https://github.com/manojsinghnegiwd",
+                            "color": "has-text-black"
+                        },
+                        {
+                            "icon": "fa fa-linkedin",
+                            "link": "https://in.linkedin.com/in/manojsinghnegiwd",
+                            "color": "has-text-info"
+                        },
+                        {
+                            "icon": "fa fa-globe",
+                            "link": "http://www.manojsinghnegi.com/",
+                            "color": "has-text-success"
+                        }
+                    ]
+                },
+                {
+                    "image": "puran.jpg",
+                    "title": "Puran Chand",
+                    "bio": "I am Frontend Developer, designer and definitely a tech enthusiast, This website is about my life, my work and my hobbies I hope you will find something interesting here!",
+                    "socialIcons": [
+                        {
+                            "icon": "fa fa-github",
+                            "link": "https://github.com/puranchand",
+                            "color": "has-text-black"
+                        },
+                        {
+                            "icon": "fa fa-linkedin",
+                            "link": "https://www.linkedin.com/in/puran-chand-130670124/",
+                            "color": "has-text-info"
+                        },
+                        {
+                            "icon": "fa fa-globe",
+                            "link": "http://www.puranchand.com/",
+                            "color": "has-text-success"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
