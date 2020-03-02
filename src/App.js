@@ -1,6 +1,6 @@
 import React from 'react';
 import dynamicData from './dynamic.json';
-import './App.css';
+import './style/App.css';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
               <div className="container">
                 <p className="level-item ">
                   <figure className="image is-128x128">
-                    <img src={require(`./${data.logo}`)} alt="logo" />
+                    <img src={require(`./images/${data.logo}`)} alt="logo" />
                   </figure>
                 </p>
               </div>
@@ -68,7 +68,7 @@ function App() {
                         <div className="column is-8">
                           <div className={leftAlign}>
                             <figure className="image is-256x256">
-                              <img src={require(`./${data.image}`)} alt="chat-app" />
+                              <img src={require(`./images/${data.image}`)} alt="chat-app" />
                             </figure>
                           </div>
                           <div className={fullAlign}>
@@ -83,7 +83,7 @@ function App() {
                                   return <>
                                     <div className="column is-1">
                                       <figure className="image is-32x32">
-                                        <a href={data.link}><img src={require(`./${data.icon}`)} alt="technologies"/></a>
+                                        <a href={data.link}><img src={require(`./images/${data.icon}`)} alt="technologies"/></a>
                                       </figure>
                                     </div>
                                   </>
@@ -132,7 +132,7 @@ function App() {
                             <div className="card">
                               <header className="card-header">
                                 <figure className="image is-256x256">
-                                  <img src={require(`./${data.image}`)} alt="developer" />
+                                  <img src={require(`./images/${data.image}`)} alt="developer" />
                                 </figure>
                               </header>
                               <div className="card-content">
