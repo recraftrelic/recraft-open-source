@@ -44,3 +44,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+@media (min-width: 1200px) and (max-width:1400px){
+  .card-content {
+    padding: 1.0em 0.5rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .columns.is-mobile>.column.is-8 {
+    width: 100% !important;
+  }
+}
