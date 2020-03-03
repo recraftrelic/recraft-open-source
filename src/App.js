@@ -1,6 +1,8 @@
 import React from 'react';
 import dynamicData from './dynamic.json';
 import './style/App.css';
+import ProjectManager from './components/ProjectManager';
+import TeamManager from './components/TeamManager';
 
 function App() {
   return (
@@ -45,65 +47,35 @@ function App() {
             {
               data.projects.map((data,index) => {
                 let leftAlign = "column is-4 is-pulled-left"
-                let fullAlign = "column is-8 is-pulled-right"
+                let rightAlign = "column is-8 is-pulled-right"
 
                 if(index %2 == 0) {
                   leftAlign = "column is-4 is-pulled-left"
-                  fullAlign = "column is-8 is-pulled-right"
+                  rightAlign = "column is-8 is-pulled-right"
                 }
 
                 if(index %2 == 1) {
                   leftAlign = "column is-4 is-pulled-right"
-                  fullAlign = "column is-8 is-pulled-left"
+                  rightAlign = "column is-8 is-pulled-left"
                 }
 
                 if(index == 2) {
                   leftAlign = "column is-12"
-                  fullAlign = "column is-12"
+                  rightAlign = "column is-12"
                 }
                 return <>
-                  <section className={index %2 == 0 ? "section alternate" : "section"}>
-                    <div className="container">
-                      <div className="columns is-mobile is-centered">
-                        <div className="column is-8">
-                          <div className={leftAlign}>
-                            <figure className="image is-256x256">
-                              <img src={require(`./images/${data.image}`)} alt="chat-app" />
-                            </figure>
-                          </div>
-                          <div className={fullAlign}>
-                            <h1 className="title has-text-left extra-space">
-                              <a className="is-text has-text-black" href={data.link}>{data.heading}</a>
-                            </h1>
-                            <p className="bd-notification is-primary has-text-left is-size-5">{data.mainDesc}</p>
-                            <p className="bd-notification is-primary has-text-left is-size-5">{data.secondDesc}</p>
-                            <div className="columns is-gap extra-space">
-                              {
-                                data.technologies.map((data,index) => {
-                                  return <>
-                                    <div className="column is-1">
-                                      <figure className="image is-32x32">
-                                        <a href={data.link}><img src={require(`./images/${data.icon}`)} alt="technologies"/></a>
-                                      </figure>
-                                    </div>
-                                  </>
-                                })
-                              }
-                            </div>
-                            {
-                              data.contribution.map((data,index) => {
-                                return <>
-                                  <p className="bd-notification is-primary has-text-left">{data.desc}<br></br>
-                                    <a className="is-text" href="link">{data.link}</a>
-                                  </p>
-                                </>
-                              })
-                            }
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
+                  <ProjectManager
+                    class={index %2 == 0}
+                    leftSection={leftAlign}
+                    rightSection={rightAlign}
+                    projectImage={require(`./images/${data.image}`)}
+                    projectLink={data.link}
+                    projectHeading={data.heading}
+                    mainDescription={data.mainDesc}
+                    secondDescription={data.secondDesc}
+                    technologies={data.technologies}
+                    contributors={data.contribution}
+                  />
                 </>
               })
             }
@@ -128,32 +100,12 @@ function App() {
                     {
                       data.teams.map((data,index) => {
                         return <>
-                          <div className="column is-4 is-pulled-left">
-                            <div className="card">
-                              <header className="card-header">
-                                <figure className="image is-256x256">
-                                  <img src={require(`./images/${data.image}`)} alt="developer" />
-                                </figure>
-                              </header>
-                              <div className="card-content">
-                                <div className="content">
-                                  <h2 className="sub-title">{data.title}</h2>
-                                    {data.bio}
-                                </div>
-                              </div>
-                              <footer className="card-footer">
-                                {
-                                  data.socialIcons.map((data,index) => {
-                                    return <>
-                                      <a href={data.link} className="card-footer-item">
-                                        <span className={`icon ${data.color}`}><i className={data.icon}></i></span>
-                                      </a>
-                                    </>
-                                  })
-                                }
-                              </footer>
-                            </div>
-                          </div>
+                          <TeamManager 
+                            teamImage={require(`./images/${data.image}`)}
+                            teamTitle={data.title}
+                            teamBio={data.bio}
+                            socialIcons={data.socialIcons}
+                          />
                         </>
                       })
                     }
