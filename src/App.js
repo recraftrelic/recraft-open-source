@@ -7,6 +7,23 @@ import TeamManager from './components/TeamManager';
 function App() {
   return (
     <div className="App">
+      <section className="section" style={{paddingBottom: 0}}>
+        <div className="container">
+          <div class="navbar-end">
+            {
+              dynamicData.navigationBar.map((data,index) => {
+                return <>
+                  <div class="navbar-item">
+                    <a href={data.link} class="navbar-item">
+                      <strong>{data.content}</strong>
+                    </a>
+                  </div>
+                </>
+              })
+            }
+          </div>
+        </div>
+      </section>
       {
         dynamicData.mainSection.map((data,index) => {
           return <>

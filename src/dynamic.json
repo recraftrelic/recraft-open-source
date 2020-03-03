@@ -1,4 +1,14 @@
 {
+    "navigationBar" : [
+        {
+            "link": "https://recraftrelic.com/",
+            "content": "About Us"
+        },
+        {
+            "link": "https://github.com/recraftrelic",
+            "content": "Github"
+        }
+    ],
     "mainSection" : [
         {
             "logo": "logo.png",
