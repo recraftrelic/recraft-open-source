@@ -11,6 +11,7 @@
             "heading": "Open source Projects",
             "projects": [
                 {
+                    "align": "left",
                     "image": "chat-app.png",
                     "heading": "React native chat app boilerplate",
                     "mainDesc": "This chat app is a boilerplate for any react native developer who wants to build a chat app.",
@@ -33,6 +34,7 @@
                     ]
                 },
                 {
+                    "align": "right",
                     "image": "base-app.png",
                     "heading": "React native base app seed",
                     "mainDesc": "This base app is a boilerplate for any react native developer who wants to build a simple app.",
@@ -55,6 +57,7 @@
                     ]
                 },
                 {
+                    "align": "center",
                     "image": "multi-app.png",
                     "heading": "Multi messenger app",
                     "mainDesc": "Open multiple session of the same web application. Build with React & Electron.",
@@ -105,7 +108,7 @@
                 },
                 {
                     "image": "manoj.jpg",
-                    "title": "Manoj Singh",
+                    "title": "Manoj Singh Negi",
                     "bio": "Thinker & Javascript developer from Chandigarh. I love JavaScript and mostly spend my day programming in JavaScript, ReactJs Nodejs solving problems.",
                     "socialIcons": [
                         {
