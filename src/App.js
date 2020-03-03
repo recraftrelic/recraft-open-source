@@ -45,21 +45,21 @@ function App() {
             {
               data.projects.map((data,index) => {
                 let leftAlign = "column is-4 is-pulled-left"
-                let fullAlign = "column is-8 is-pulled-right"
+                let rightAlign = "column is-8 is-pulled-right"
 
                 if(index %2 == 0) {
                   leftAlign = "column is-4 is-pulled-left"
-                  fullAlign = "column is-8 is-pulled-right"
+                  rightAlign = "column is-8 is-pulled-right"
                 }
 
                 if(index %2 == 1) {
                   leftAlign = "column is-4 is-pulled-right"
-                  fullAlign = "column is-8 is-pulled-left"
+                  rightAlign = "column is-8 is-pulled-left"
                 }
 
                 if(index == 2) {
                   leftAlign = "column is-12"
-                  fullAlign = "column is-12"
+                  rightAlign = "column is-12"
                 }
                 return <>
                   <section className={index %2 == 0 ? "section alternate" : "section"}>
@@ -71,7 +71,7 @@ function App() {
                               <img src={require(`./images/${data.image}`)} alt="chat-app" />
                             </figure>
                           </div>
-                          <div className={fullAlign}>
+                          <div className={rightAlign}>
                             <h1 className="title has-text-left extra-space">
                               <a className="is-text has-text-black" href={data.link}>{data.heading}</a>
                             </h1>
