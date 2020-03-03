@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/logo.png">
+  <img src="./src/images/logo.png">
 </p>
 
 <h1 align="center">Help out your favorite open source projects and become a better developer while doing it.</h1>
