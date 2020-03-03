@@ -2,8 +2,8 @@
     "mainSection" : [
         {
             "logo": "logo.png",
-            "heading": "Help out your favorite open source projects and become a better developer while doing it.",
-            "description": "Pick your favorite repos to receive a different open issue in your inbox every day. Fix the issue and everybody wins. 51,916 developers are working on 5,166 open source repos using CodeTriage."
+            "heading": "Recraft team loves to code",
+            "description": "Are you a developer? Pick out your favourite projects from one of our open source projects. Let's dive deep into the world of code."
         }
     ],
     "projectSection" : [
@@ -28,7 +28,7 @@
                     "contribution": [
                         {
                             "desc": "If you want to contribute to our project and make it better, visit our github link.",
-                            "link": "https://github.com/recraftrelic/react-native-chat-app-boilerplate"
+                            "links": "https://github.com/recraftrelic/react-native-chat-app-boilerplate"
                         }
                     ]
                 },
@@ -50,15 +50,14 @@
                     "contribution": [
                         {
                             "desc": "If you want to contribute to our project and make it better, visit our github link.",
-                            "link": "https://github.com/recraftrelic/recraft-react-native-base-app-seed"
+                            "links": "https://github.com/recraftrelic/recraft-react-native-base-app-seed"
                         }
                     ]
                 },
                 {
                     "image": "multi-app.png",
-                    "heading": "React multi messenger app electron boilerplate",
-                    "mainDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    "secondDesc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                    "heading": "Multi messenger app",
+                    "mainDesc": "Open multiple session of the same web application. Build with React & Electron.",
                     "technologies": [
                         {
                             "icon": "react.png",
@@ -76,7 +75,7 @@
                     "contribution": [
                         {
                             "desc": "If you want to contribute to our project and make it better, visit our github link.",
-                            "link": "https://github.com/recraftrelic/multi-messenger-app"
+                            "links": "https://github.com/recraftrelic/multi-messenger-app"
                         }
                     ]
                 }
@@ -90,7 +89,7 @@
                 {
                     "image": "yogesh.jpg",
                     "title": "Yogesh Kapoor",
-                    "bio": "I am a Software Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me at Medium.",
+                    "bio": "I am a Software Developer at Recraft Relic. I write about JavaScript and React. And sharing my worldview with everyone join my quest by following me on Github.",
                     "socialIcons": [
                         {
                             "icon": "fa fa-github",
@@ -129,7 +128,7 @@
                 {
                     "image": "puran.jpg",
                     "title": "Puran Chand",
-                    "bio": "I am Frontend Developer, designer and definitely a tech enthusiast, This website is about my life, my work and my hobbies I hope you will find something interesting here!",
+                    "bio": "I am Frontend Developer, designer and definitely a tech enthusiast. Technology is the key point of my professional career, but it’s my oldest hobby and passion over the years",
                     "socialIcons": [
                         {
                             "icon": "fa fa-github",
