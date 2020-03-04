@@ -7,7 +7,7 @@ import TeamManager from './components/TeamManager';
 function App() {
   return (
     <div className="App">
-      <section className="section" style={{paddingBottom: 0}}>
+      <section className="section" style={{paddingTop: 10, paddingBottom: 0}}>
         <div className="container">
           <div class="navbar-end">
             {
