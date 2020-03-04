@@ -9,12 +9,12 @@ function App() {
     <div className="App">
       <section className="section" style={{paddingTop: 10, paddingBottom: 0}}>
         <div className="container">
-          <div class="navbar-end">
+          <div className="navbar-end">
             {
               dynamicData.navigationBar.map((data,index) => {
                 return <>
-                  <div class="navbar-item">
-                    <a href={data.link} class="navbar-item">
+                  <div className="navbar-item">
+                    <a href={data.link} className="navbar-item">
                       <strong>{data.content}</strong>
                     </a>
                   </div>
@@ -64,6 +64,7 @@ function App() {
             </section>
             <ProjectList
               projectList={data.projects}
+              highlightAlternate={dynamicData.defaultTheme}
               key={index}
             />
           </>
