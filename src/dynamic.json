@@ -1,4 +1,10 @@
 {
+    "defaultTheme" : [
+        {
+            "color": "#4a4a4a",
+            "backgroundColor": "#fbfbfb"
+        }
+    ],
     "mainSection" : [
         {
             "logo": "logo.png",
