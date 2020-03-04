@@ -13,7 +13,7 @@ export default class TeamMemberList extends React.Component
                       this.props.members.map((data,index) => {
                         return <>
                           <TeamMembers
-                              members={data}
+                              teams={data}
                           />
                         </>
                       })

@@ -34,6 +34,7 @@ function App() {
           </>
         })
       }
+      
       {
         dynamicData.projectSection.map((data,index) => {
           return <>
