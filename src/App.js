@@ -1,8 +1,8 @@
 import React from 'react';
 import dynamicData from './dynamic.json';
 import './style/App.css';
-import Projects from './components/Projects';
-import TeamMembers from './components/TeamMembers';
+import ProjectList from './components/ProjectList';
+import TeamMemberList from './components/TeamMemberList';
 
 function App() {
   return (
@@ -44,8 +44,9 @@ function App() {
                 </p>
               </div>
             </section>
-            <Projects
+            <ProjectList
               projectList={data.projects}
+              key={index}
             />
           </>
         })
@@ -61,8 +62,9 @@ function App() {
                 </p>
               </div>
             </section>
-            <TeamMembers 
+            <TeamMemberList
               members={data.teams}
+              key={index}
             />
           </>
         })
