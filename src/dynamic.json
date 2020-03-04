@@ -1,8 +1,9 @@
 {
     "defaultTheme" : [
         {
-            "color": "#4a4a4a",
-            "backgroundColor": "#fbfbfb"
+            "headingColor": "#000000",
+            "contentColor": "#4a4a4a",
+            "highlightColor": "#fbfbfb"
         }
     ],
     "mainSection" : [
