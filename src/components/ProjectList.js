@@ -20,8 +20,12 @@ export default class ProjectList extends React.Component
                     leftAlign = "column is-12"
                     rightAlign = "column is-12"
                   }
+
+                  let highlight = index %2 == 0 ? this.props.highlightAlternate.map((data,index) => {
+                    return data.highlightColor}): null
+
                   return <>
-                    <section className={index %2 == 0 ? "section alternate" : "section"}>
+                    <section className="section" style={{backgroundColor:highlight}}>
                       <div className="container">
                         <div className="columns is-mobile is-centered">
                           <div className="column is-8">
