@@ -31,6 +31,7 @@
                     "align": "left",
                     "image": "chat-app.png",
                     "heading": "React native chat app boilerplate",
+                    "link": "https://github.com/recraftrelic/react-native-chat-app-boilerplate",
                     "mainDesc": "This chat app is a boilerplate for any react native developer who wants to build a chat app.",
                     "secondDesc": "The goal of this boilerplate is to provide a fully functional chat app which can be reused with very little to no modification.",
                     "technologies": [
@@ -54,6 +55,7 @@
                     "align": "right",
                     "image": "base-app.png",
                     "heading": "React native base app seed",
+                    "link": "https://github.com/recraftrelic/recraft-react-native-base-app-seed",
                     "mainDesc": "This base app is a boilerplate for any react native developer who wants to build a simple app.",
                     "secondDesc": "The goal of this boilerplate is to provide a simple functional routing & theme app which can be reused with very little to no modification.",
                     "technologies": [
@@ -77,6 +79,7 @@
                     "align": "center",
                     "image": "multi-app.png",
                     "heading": "Multi messenger app",
+                    "link": "https://github.com/recraftrelic/multi-messenger-app",
                     "mainDesc": "Open multiple session of the same web application. Build with React & Electron.",
                     "technologies": [
                         {
@@ -148,7 +151,7 @@
                 {
                     "image": "puran.jpg",
                     "title": "Puran Chand",
-                    "bio": "I am Frontend Developer, designer and definitely a tech enthusiast. Technology is the key point of my professional career, but it’s my oldest hobby and passion over the years",
+                    "bio": "I am Frontend Developer, designer and definitely a tech enthusiast. Technology is the key point of my professional career, but it’s my oldest hobby and passion over the years.",
                     "socialIcons": [
                         {
                             "icon": "fa fa-github",
