@@ -14,7 +14,7 @@ function App() {
               dynamicData.navigationBar.map((data,index) => {
                 return <>
                   <div className="navbar-item">
-                    <a href={data.link} className="navbar-item">
+                    <a target="_blank" href={data.link} className="navbar-item">
                       <strong>{data.content}</strong>
                     </a>
                   </div>
