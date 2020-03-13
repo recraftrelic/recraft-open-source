@@ -6,10 +6,17 @@ export default class ProjectItems extends React.Component
     render () {
         return (
           <>
-            <div className={this.props.left}>
-              <figure className="image is-256x256">
-                <a target="_blank" href={this.props.items.link}><img src={require(`../images/${this.props.items.image}`)} alt="chat-app" /></a>
-              </figure>
+            <div className={this.props.left}> 
+                <figure className="image is-256x256">
+                  {
+                    this.props.items.video ?
+                      <div style={{borderRadius: 50, overflow: 'hidden'}}>
+                        <video width="90%" height="auto" loop autoPlay={true} muted={true} src={require(`../videos/${this.props.items.video}.mp4`)} />
+                      </div>
+                    : null
+                  }
+                  <img style={ this.props.items.video ? {position: 'absolute', top: -10, } : {}} src={require(`../images/${this.props.items.image}`)} alt="react-app"/>
+                </figure>
             </div>
             <div className={this.props.right}>
               <h1 className="title has-text-left extra-space">
