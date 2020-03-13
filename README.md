@@ -1,10 +1,8 @@
-<p align="center">
-  <img src="./src/images/logo.png">
-</p>
+[<p align="center"><img src="./src/images/logo.png"></p>](https://www.opensource.recraftrelic.com/)
 
-<h1 align="center">Help out your favorite open source projects and become a better developer while doing it.</h1>
+<h1 align="center">Recraft team loves to code</h1>
 
-<p align="center">Pick your favorite repos to receive a different open issue in your inbox every day. Fix the issue and everybody wins. 51,916 developers are working on 5,166 open source repos using CodeTriage.</p>
+<p align="center">Are you a developer? Pick out your favourite projects from one of our open source projects. Let's dive deep into the world of code.</p>
 
 ## Open source Projects
 
