@@ -8,10 +8,14 @@ export default class ProjectItems extends React.Component
           <>
             <div className={this.props.left}> 
                 <figure className="image is-256x256">
-                  <div style={{borderRadius: 50, overflow: 'hidden'}}>
-                    <video width="90%" height="auto" loop autoplay='true' src={require(`../videos/${this.props.items.video}.mp4`)} />
-                  </div>
-                  <img style={{position: 'absolute', top: -10, }} src={require(`../images/${this.props.items.image}`)} alt="react-app"/>
+                  {
+                    this.props.items.video ?
+                      <div style={{borderRadius: 50, overflow: 'hidden'}}>
+                        <video width="90%" height="auto" loop autoPlay={true} muted={true} src={require(`../videos/${this.props.items.video}.mp4`)} />
+                      </div>
+                    : null
+                  }
+                  <img style={ this.props.items.video ? {position: 'absolute', top: -10, } : {}} src={require(`../images/${this.props.items.image}`)} alt="react-app"/>
                 </figure>
             </div>
             <div className={this.props.right}>

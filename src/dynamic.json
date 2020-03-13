@@ -79,7 +79,7 @@
                 },
                 {
                     "align": "center",
-                    "video": "base-app-ios",
+                    "video": "",
                     "image": "multi-app.png",
                     "heading": "Multi messenger app",
                     "link": "https://github.com/recraftrelic/multi-messenger-app",
