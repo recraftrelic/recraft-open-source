@@ -125,8 +125,6 @@
   .outer-div {
     border-radius: 45px;
   }
-}
-@media (max-width: 350px) {
   .column.is-4 {
     width: 100%;
   }
