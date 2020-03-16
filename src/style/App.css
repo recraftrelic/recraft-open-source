@@ -77,6 +77,9 @@
   .image-frame {
     top: -5px;
   }
+  .columns.is-mobile>.column.is-8 {
+    width: 100% !important;
+  }
 }
 @media (max-width: 850px) {
   .outer-div {
