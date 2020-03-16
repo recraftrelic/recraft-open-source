@@ -36,6 +36,16 @@
   padding: 10px;
 }
 
+.outer-div {
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.image-frame {
+  position: absolute;
+  top: -10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -46,9 +56,31 @@
 }
 
 
-@media (min-width: 1200px) and (max-width:1400px){
+@media (min-width: 1200px) and (max-width:1410px){
   .card-content {
     padding: 1.0em 0.5rem !important;
+  }
+  .outer-div {
+    border-radius: 35px;
+  }
+  .image-frame {
+    top: -6px;
+  }
+  .container {
+    max-width: 1170px !important;
+  }
+}
+@media (max-width: 1200px){
+  .outer-div {
+    border-radius: 30px;
+  }
+  .image-frame {
+    top: -5px;
+  }
+}
+@media (max-width: 850px) {
+  .outer-div {
+    border-radius: 25px;
   }
 }
 @media (max-width: 768px) {
@@ -60,9 +92,39 @@
     width: 50%;
     margin: auto !important; 
   } 
+  .techno {
+    float: left;
+    width: auto;
+  }
+  p.bd-notification.is-primary.has-text-left {
+    float: left;
+    width: 100%;
+  }
+  .image-frame {
+    top: -7px;
+  }
+  .outer-div {
+    border-radius: 40px;
+  }
 }
-@media (max-width: 425px) {
+@media (max-width: 520px) {
+  .column.is-4 {
+    width: 70%;
+  } 
+  .outer-div {
+    border-radius: 50px;
+  }
+  .image-frame {
+    top: -8px;
+  }
+}
+@media (max-width: 400px) {
+  .outer-div {
+    border-radius: 45px;
+  }
+}
+@media (max-width: 350px) {
   .column.is-4 {
     width: 100%;
-  } 
+  }
 }
