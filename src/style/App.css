@@ -112,7 +112,7 @@
 }
 @media (max-width: 520px) {
   .column.is-4 {
-    width: 70%;
+    width: 80%;
   } 
   .outer-div {
     border-radius: 50px;
@@ -123,7 +123,7 @@
 }
 @media (max-width: 400px) {
   .outer-div {
-    border-radius: 45px;
+    border-radius: 35px;
   }
   .column.is-4 {
     width: 100%;
