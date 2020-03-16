@@ -10,12 +10,12 @@ export default class ProjectItems extends React.Component
                 <figure className="image is-256x256">
                   {
                     this.props.items.video ?
-                      <div style={{borderRadius: 50, overflow: 'hidden'}}>
+                      <div className="outer-div">
                         <video width="90%" height="auto" loop autoPlay={true} muted={true} src={require(`../videos/${this.props.items.video}.mp4`)} />
                       </div>
                     : null
                   }
-                  <img style={ this.props.items.video ? {position: 'absolute', top: -10, } : {}} src={require(`../images/${this.props.items.image}`)} alt="react-app"/>
+                  <img className={ this.props.items.video ? "image-frame" : "" } src={require(`../images/${this.props.items.image}`)} alt="react-app"/>
                 </figure>
             </div>
             <div className={this.props.right}>
