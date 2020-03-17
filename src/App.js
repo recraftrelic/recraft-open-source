@@ -9,6 +9,19 @@ function App() {
     <div className="App">
       <section className="section" style={{paddingTop: 10, paddingBottom: 0}}>
         <div className="container">
+        <div className="navbar-menu">
+          <div className="navbar-start">
+            {
+              dynamicData.logoSection.map((data,index) => {
+                return <>
+                  <div className="navbar-item">
+                    <img className="nav-logo" src={data.logo} width="40" height="40" alt="logo" />
+                    <h1 className="title nav-heading">{data.name}</h1>
+                  </div>
+                </>
+              })
+            }
+          </div>
           <div className="navbar-end">
             {
               dynamicData.navigationBar.map((data,index) => {
@@ -21,6 +34,7 @@ function App() {
                 </>
               })
             }
+          </div>
           </div>
         </div>
       </section>
