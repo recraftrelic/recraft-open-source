@@ -51,8 +51,24 @@
   padding-bottom: 10%;
 }
 
+.open-source-section .title{
+  font-size: 5.2em;
+  padding-left: 20px;
+}
+
+.open-source-section .subtitle{
+  font-size: 2.813rem;
+  color: #7c7c7c;
+}
+
+.open-source-section .column.is-inline-block:first-child .title {
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
 .icon-color {
   color: #ed5d45 !important;
+  padding: 0px !important;
 }
 
 .nav-heading {
@@ -97,13 +113,25 @@
   .columns.is-mobile>.column.is-8 {
     width: 100% !important;
   }
+  .columns.open-source-section .column.is-10 {
+    width: 100% !important;
+  }
+  .open-source-section .title {
+    font-size: 4.2em;
+  }
+  .open-source-section .subtitle {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 850px) {
   .outer-div {
     border-radius: 25px;
   }
-  .columns.open-source-section .column.is-6 {
-    width: 100% !important;
+  .open-source-section .title{
+    font-size: 3em;
+  }
+  .open-source-section .subtitle {
+    font-size: 2.2rem!important;
   }
 }
 @media (max-width: 768px) {
@@ -130,6 +158,14 @@
     border-radius: 40px;
   }
 }
+@media (max-width: 620px) {
+  .open-source-section .column.is-inline-block {
+    display: block !important;
+  }
+  .open-source-section .title {
+    padding: 0px !important;
+  }
+}
 @media (max-width: 520px) {
   .column.is-4 {
     width: 80%;
@@ -140,8 +176,11 @@
   .image-frame {
     top: -8px;
   }
-  .open-source-section .column.is-inline-block {
-    display: block !important;
+  .open-source-section .title{
+    font-size: 2em;
+  }
+  .open-source-section .subtitle {
+    font-size: 1.5rem!important;
   }
 }
 @media (max-width: 400px) {

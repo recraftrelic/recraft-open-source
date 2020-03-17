@@ -51,7 +51,7 @@ function App() {
             <section className="section">
               <div className="container">
                 <div className="columns is-mobile is-centered open-source-section">
-                  <div className="column is-6">
+                  <div className="column is-10">
                     <div class="column is-inline-block">
                       <h1 className="title">{data.mainHeading}</h1>
                     </div>
