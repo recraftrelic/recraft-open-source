@@ -46,6 +46,15 @@
   top: -10px;
 }
 
+.open-source-section {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.icon-color {
+  color: #ed5d45 !important;
+}
+
 .nav-heading {
   padding-left: 10px;
 }
@@ -93,6 +102,9 @@
   .outer-div {
     border-radius: 25px;
   }
+  .columns.open-source-section .column.is-6 {
+    width: 100% !important;
+  }
 }
 @media (max-width: 768px) {
   .columns.is-mobile>.column.is-8 {
@@ -127,6 +139,9 @@
   }
   .image-frame {
     top: -8px;
+  }
+  .open-source-section .column.is-inline-block {
+    display: block !important;
   }
 }
 @media (max-width: 400px) {

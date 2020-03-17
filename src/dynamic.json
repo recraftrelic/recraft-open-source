@@ -24,8 +24,9 @@
     ],
     "mainSection" : [
         {
-            "logo": "logo.png",
-            "heading": "Recraft team loves to code",
+            "mainHeading": "Recraft ",
+            "icon": "fa fa-heart",
+            "secondHeading": " Open Source",
             "description": "Are you a developer? Pick out your favourite projects from one of our open source projects. Let's dive deep into the world of code."
         }
     ],
