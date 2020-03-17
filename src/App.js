@@ -27,20 +27,13 @@ function App() {
       {
         dynamicData.mainSection.map((data,index) => {
           return <>
-            <section className="section" style={{paddingBottom: 0}}>
-              <div className="container">
-                <p className="level-item ">
-                  <figure className="image is-128x128">
-                    <img src={require(`./images/${data.logo}`)} alt="logo" />
-                  </figure>
-                </p>
-              </div>
-            </section>
             <section className="section">
               <div className="container">
-                <div className="columns is-mobile is-centered">
-                  <div className="column is-8">
-                    <h1 className="title">{data.heading}</h1>
+                <div className="columns is-mobile is-centered open-source-section">
+                  <div className="column is-6">
+                  <div class="column is-inline-block"><h1 className="title">{data.mainHeading}</h1></div>
+                  <div class="column is-inline-block"><span className="title icon icon-color"><i className={data.icon}></i></span></div>
+                  <div class="column is-inline-block"><h1 className="title">{data.secondHeading}</h1></div>
                     <h2 className="subtitle extra-space">
                       {data.description}
                     </h2>
