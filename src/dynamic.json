@@ -6,6 +6,12 @@
             "highlightColor": "#fbfbfb"
         }
     ],
+    "logoSection" : [
+        {
+            "logo": "logo.png",
+            "name": "Recraft Relic"
+        }
+    ],
     "navigationBar" : [
         {
             "link": "https://recraftrelic.com/",

@@ -55,6 +55,14 @@
   color: #ed5d45 !important;
 }
 
+.nav-heading {
+  padding-left: 10px;
+}
+
+.nav-logo {
+  max-height: 40px !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
