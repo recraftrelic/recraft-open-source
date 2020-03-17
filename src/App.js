@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <section className="section" style={{paddingTop: 10, paddingBottom: 0}}>
         <div className="container">
-        <div className="navbar-menu">
-          <div className="navbar-start">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div className="navbar-brand">
             {
               dynamicData.logoSection.map((data,index) => {
                 return <>
@@ -21,8 +21,14 @@ function App() {
                 </>
               })
             }
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTop">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
           </div>
-          <div className="navbar-end">
+          <div id="navbarTop" class="navbar-menu">
+            <div className="navbar-end">
             {
               dynamicData.navigationBar.map((data,index) => {
                 return <>
@@ -34,8 +40,9 @@ function App() {
                 </>
               })
             }
+            </div>
           </div>
-          </div>
+          </nav>
         </div>
       </section>
       {
@@ -45,9 +52,15 @@ function App() {
               <div className="container">
                 <div className="columns is-mobile is-centered open-source-section">
                   <div className="column is-6">
-                  <div class="column is-inline-block"><h1 className="title">{data.mainHeading}</h1></div>
-                  <div class="column is-inline-block"><span className="title icon icon-color"><i className={data.icon}></i></span></div>
-                  <div class="column is-inline-block"><h1 className="title">{data.secondHeading}</h1></div>
+                    <div class="column is-inline-block">
+                      <h1 className="title">{data.mainHeading}</h1>
+                    </div>
+                    <div class="column is-inline-block">
+                      <span className="title icon icon-color"><i className={data.icon}></i></span>
+                    </div>
+                    <div class="column is-inline-block">
+                      <h1 className="title">{data.secondHeading}</h1>
+                    </div>
                     <h2 className="subtitle extra-space">
                       {data.description}
                     </h2>
