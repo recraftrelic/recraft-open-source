@@ -5,6 +5,7 @@ import ProjectList from './components/ProjectList';
 import TeamMemberList from './components/TeamMemberList';
 
 function App() {
+  const [isActive, setIsActive] = React.useState(false);
   return (
     <div className="App">
       <section className="section" style={{paddingTop: 10, paddingBottom: 0}}>
@@ -21,13 +22,13 @@ function App() {
                 </>
               })
             }
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTop">
+            <a onClick={() => {setIsActive(!isActive)}} role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTop">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
             </a>
           </div>
-          <div id="navbarTop" class="navbar-menu">
+          <div id="navbarTop" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
             <div className="navbar-end">
             {
               dynamicData.navigationBar.map((data,index) => {
