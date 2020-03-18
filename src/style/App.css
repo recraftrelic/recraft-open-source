@@ -79,6 +79,10 @@
   max-height: 40px !important;
 }
 
+.navbar-menu.is-active {
+  box-shadow: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
