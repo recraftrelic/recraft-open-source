@@ -3,6 +3,7 @@ import dynamicData from './dynamic.json';
 import './style/App.css';
 import ProjectList from './components/ProjectList';
 import TeamMemberList from './components/TeamMemberList';
+import GithubProjects from './components/GithubProjects';
 
 function App() {
   const [isActive, setIsActive] = React.useState(false);
@@ -91,6 +92,8 @@ function App() {
           </>
         })
       }
+      
+      <GithubProjects />
 
       {
         dynamicData.teamSection.map((data,index) => {

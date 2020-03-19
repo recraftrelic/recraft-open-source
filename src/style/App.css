@@ -195,3 +195,8 @@
     width: 100%;
   }
 }
+
+.commits-item {
+  display: block;
+  line-height: 3;
+}
