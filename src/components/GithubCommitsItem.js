@@ -14,8 +14,8 @@ export default class GithubCommitsItem extends React.Component {
                             </a>
                         </figure>
                     </div>
-                    <p className="bd-notification is-primary">
-                        <span className="is-size-6"><a target="_blank" className="is-text" href={commitUserProfile}>{name}</a></span>
+                    <p className="bd-notification is-primary is-size-3">
+                        <span className=""><a target="_blank" className="is-text" href={commitUserProfile}>{name}</a></span>
                         <span>{" pushed commit "} (<a target="_blank" className="is-text" href={commitLink}>{commitId.substring(0,7)}</a>)</span>
                         <span>{" to "} <a target="_blank" className="is-text" href={repoLink}>{repo}</a></span>
                     </p>

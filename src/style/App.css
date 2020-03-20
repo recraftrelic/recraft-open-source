@@ -198,5 +198,9 @@
 
 .commits-item {
   display: block;
-  line-height: 3;
+  font-weight: 500;
+}
+
+.commits-item .columns {
+  justify-content: center;
 }
