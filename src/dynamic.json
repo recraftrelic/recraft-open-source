@@ -36,7 +36,7 @@
             "projects": [
                 {
                     "align": "left",
-                    "video": "chat-app-ios",
+                    "video": "chat-app",
                     "image": "phone-case.png",
                     "heading": "React native chat app boilerplate",
                     "link": "https://github.com/recraftrelic/react-native-chat-app-boilerplate",
