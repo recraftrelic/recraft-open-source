@@ -46,29 +46,25 @@ export default class GithubProjects extends React.Component {
       <section className="section">
         <div className="container">
           <div className="columns is-mobile is-centered">
-            <div className="column is-8">
-              <div className={"column is-12 is-pulled-left has-text-left"}>
-                <h1 className="title has-text-left extra-space">
-                  <a target="_blank" className="is-text has-text-black" href={"/"}>{"Github Works"}</a>
-                </h1>
-                {commitList.length && commitList.map((commit, index) => {
-                  if(index < 10){
-                    return (
-                      <div key={index}>
-                        <GithubCommitsItem
-                          repo={repo}
-                          repoLink={repoLink}
-                          name={commit.commit.author.name}
-                          avatar={commit.author.avatar_url}
-                          commitId={commit.sha}
-                          commitLink={commit.html_url}
-                          commitUserProfile={commit.author.html_url}
-                        />
-                      </div>
-                    )
-                  }
-                })}
-              </div>
+            <div className="column is-12">
+              <h1 className="title has-text-centered extra-space is-size-1">{"Open source contributions"}</h1>
+              {commitList.length && commitList.map((commit, index) => {
+                if(index < 10){
+                  return (
+                    <div key={index}>
+                      <GithubCommitsItem
+                        repo={repo}
+                        repoLink={repoLink}
+                        name={commit.commit.author.name}
+                        avatar={commit.author.avatar_url}
+                        commitId={commit.sha}
+                        commitLink={commit.html_url}
+                        commitUserProfile={commit.author.html_url}
+                      />
+                    </div>
+                  )
+                }
+              })}
             </div>
           </div>
         </div>

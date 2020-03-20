@@ -73,7 +73,7 @@ function App() {
           </>
         })
       }
-      
+       <GithubProjects />
       {
         dynamicData.projectSection.map((data,index) => {
           return <>
@@ -92,8 +92,6 @@ function App() {
           </>
         })
       }
-      
-      <GithubProjects />
 
       {
         dynamicData.teamSection.map((data,index) => {
