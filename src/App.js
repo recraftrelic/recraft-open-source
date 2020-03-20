@@ -73,7 +73,7 @@ function App() {
           </>
         })
       }
-       <GithubProjects />
+       {/* <GithubProjects /> */}
       {
         dynamicData.projectSection.map((data,index) => {
           return <>
