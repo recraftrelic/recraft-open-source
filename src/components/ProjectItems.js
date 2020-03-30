@@ -46,6 +46,17 @@ export default class ProjectItems extends React.Component
                       </>
                     })
                 }
+                {
+                    this.props.items.playstore.map((data,index) => {
+                      return <>
+                      <a target="_blank" className="is-text" href={data.links}>
+                        <figure className="image is-256x256">
+                          <img className="play-store" src={require(`../images/${data.badge}`)} width="40" height="40" alt="playstore" />
+                        </figure>
+                      </a>
+                      </>
+                    })
+                }
             </div>
           </>
         );

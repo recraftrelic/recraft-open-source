@@ -57,6 +57,12 @@
                             "desc": "If you want to contribute to our project and make it better, visit our github link.",
                             "links": "https://github.com/recraftrelic/react-native-chat-app-boilerplate"
                         }
+                    ],
+                    "playstore": [
+                        {
+                            "badge": "badge.png",
+                            "links": "https://play.google.com/store/apps/details?id=com.reactnativechatappboilerplate"
+                        }
                     ]
                 },
                 {
@@ -82,6 +88,9 @@
                             "desc": "If you want to contribute to our project and make it better, visit our github link.",
                             "links": "https://github.com/recraftrelic/recraft-react-native-base-app-seed"
                         }
+                    ],
+                    "playstore": [
+                        
                     ]
                 },
                 {
@@ -110,6 +119,9 @@
                             "desc": "If you want to contribute to our project and make it better, visit our github link.",
                             "links": "https://github.com/recraftrelic/multi-messenger-app"
                         }
+                    ],
+                    "playstore": [
+                        
                     ]
                 }
             ]
