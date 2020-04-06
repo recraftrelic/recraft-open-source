@@ -94,12 +94,13 @@
                     ]
                 },
                 {
-                    "align": "center",
-                    "video": "",
-                    "image": "multi-app.png",
-                    "heading": "Multi messenger app",
-                    "link": "https://github.com/recraftrelic/multi-messenger-app",
-                    "mainDesc": "Open multiple session of the same web application. Build with React & Electron.",
+                    "align": "left",
+                    "video": "shopping-app",
+                    "image": "phone-case.png",
+                    "heading": "Recraft Shopping App",
+                    "link": "https://github.com/recraftrelic/recraft-react-native-shopping-app",
+                    "mainDesc": "This base app is a boilerplate for any react native developer who wants to build a simple app.",
+                    "secondDesc": "The goal of this boilerplate is to provide a simple functional routing & theme app which can be reused with very little to no modification.",
                     "technologies": [
                         {
                             "icon": "react.png",
@@ -108,16 +109,12 @@
                         {
                             "icon": "js.png",
                             "link": "https://nodejs.org/en/"
-                        },
-                        {
-                            "icon": "elctron.png",
-                            "link": "https://www.electronjs.org/"
                         }
                     ],
                     "contribution": [
                         {
                             "desc": "If you want to contribute to our project and make it better, visit our github link.",
-                            "links": "https://github.com/recraftrelic/multi-messenger-app"
+                            "links": "https://github.com/recraftrelic/recraft-react-native-shopping-app"
                         }
                     ],
                     "playstore": [
