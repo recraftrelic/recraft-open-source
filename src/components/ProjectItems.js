@@ -20,7 +20,7 @@ export default class ProjectItems extends React.Component
             </div>
             <div className={this.props.right}>
               <h1 className="title has-text-left extra-space">
-                <a target="_blank" className="is-text has-text-black" href={this.props.items.link}>{this.props.items.heading}</a>
+                <a target="_blank" rel="noopener noreferrer" className="is-text has-text-black" href={this.props.items.link}>{this.props.items.heading}</a>
               </h1>
               <p className="bd-notification is-primary has-text-left is-size-5">{this.props.items.mainDesc}</p>
               <p className="bd-notification is-primary has-text-left is-size-5">{this.props.items.secondDesc}</p>
@@ -30,7 +30,7 @@ export default class ProjectItems extends React.Component
                         return <>
                           <div className="techno">
                             <figure className="image is-32x32">
-                              <a target="_blank" href={data.link}><img src={require(`../images/${data.icon}`)} alt="technologies"/></a>
+                              <a target="_blank" rel="noopener noreferrer" href={data.link}><img src={require(`../images/${data.icon}`)} alt="technologies"/></a>
                             </figure>
                           </div>
                         </>
@@ -41,7 +41,7 @@ export default class ProjectItems extends React.Component
                     this.props.items.contribution.map((data,index) => {
                       return <>
                         <p className="bd-notification is-primary has-text-left">{data.desc}<br></br>
-                          <a target="_blank" className="is-text" href={data.links}>{data.links}</a>
+                          <a target="_blank" rel="noopener noreferrer" className="is-text" href={data.links}>{data.links}</a>
                         </p>
                       </>
                     })
@@ -50,7 +50,7 @@ export default class ProjectItems extends React.Component
                     this.props.items.documentation.map((data,index) => {
                       return <>
                         <p className="bd-notification is-primary has-text-left doc-link">{data.desc}<br></br>
-                          <a target="_blank" className="is-text" href={data.links}>{data.links}</a>
+                          <a target="_blank" rel="noopener noreferrer" className="is-text" href={data.links}>{data.links}</a>
                         </p>
                       </>
                     })
@@ -58,7 +58,7 @@ export default class ProjectItems extends React.Component
                 {
                     this.props.items.playstore.map((data,index) => {
                       return <>
-                      <a target="_blank" className="is-text" href={data.links}>
+                      <a target="_blank" rel="noopener noreferrer" className="is-text" href={data.links}>
                         <figure className="image is-256x256">
                           <img className="play-store" src={require(`../images/${data.badge}`)} width="40" height="40" alt="playstore" />
                         </figure>

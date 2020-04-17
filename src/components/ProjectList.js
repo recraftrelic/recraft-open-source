@@ -11,17 +11,17 @@ export default class ProjectList extends React.Component
                   let leftAlign = "column is-4 is-pulled-left"
                   let rightAlign = "column is-8 is-pulled-right"
   
-                  if(data.align == "right") {
+                  if(data.align === "right") {
                     leftAlign = "column is-4 is-pulled-right"
                     rightAlign = "column is-8 is-pulled-left"
                   }
   
-                  if(data.align == "center") {
+                  if(data.align === "center") {
                     leftAlign = "column is-12"
                     rightAlign = "column is-12"
                   }
 
-                  let highlight = index %2 == 0 ? this.props.highlightAlternate.map((data,index) => {
+                  let highlight = index %2 === 0 ? this.props.highlightAlternate.map((data,index) => {
                     return data.highlightColor}): null
 
                   return <>

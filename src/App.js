@@ -3,7 +3,6 @@ import dynamicData from './dynamic.json';
 import './style/App.css';
 import ProjectList from './components/ProjectList';
 import TeamMemberList from './components/TeamMemberList';
-import GithubProjects from './components/GithubProjects';
 
 function App() {
   const [isActive, setIsActive] = React.useState(false);
@@ -23,7 +22,7 @@ function App() {
                 </>
               })
             }
-            <a onClick={() => {setIsActive(!isActive)}} role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTop">
+            <a onClick={() => {setIsActive(!isActive)}} role="button" href="!#" rel="noopener noreferrer" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTop">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -35,7 +34,7 @@ function App() {
               dynamicData.navigationBar.map((data,index) => {
                 return <>
                   <div className="navbar-item">
-                    <a target="_blank" href={data.link} className="navbar-item">
+                    <a target="_blank" rel="noopener noreferrer" href={data.link} className="navbar-item">
                       <strong>{data.content}</strong>
                     </a>
                   </div>
