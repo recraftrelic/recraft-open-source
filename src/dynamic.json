@@ -58,6 +58,12 @@
                             "links": "https://github.com/recraftrelic/react-native-chat-app-boilerplate"
                         }
                     ],
+                    "documentation": [
+                        {
+                            "desc": "If you want to read our project documentation then visit below link.",
+                            "links": "https://documentation.recraftrelic.com/chatapp/"
+                        }
+                    ],
                     "playstore": [
                         {
                             "badge": "badge.png",
@@ -89,6 +95,9 @@
                             "links": "https://github.com/recraftrelic/recraft-react-native-base-app-seed"
                         }
                     ],
+                    "documentation": [
+
+                    ],
                     "playstore": [
                         
                     ]
@@ -99,8 +108,8 @@
                     "image": "phone-case.png",
                     "heading": "Recraft Shopping App",
                     "link": "https://github.com/recraftrelic/recraft-react-native-shopping-app",
-                    "mainDesc": "This base app is a boilerplate for any react native developer who wants to build a simple app.",
-                    "secondDesc": "The goal of this boilerplate is to provide a simple functional routing & theme app which can be reused with very little to no modification.",
+                    "mainDesc": "This shopping app is a boilerplate for any react native developer who wants to build a shopping app.",
+                    "secondDesc": "The goal of this boilerplate is to provide a fully functional shopping app which can be reused with very little to no modification.",
                     "technologies": [
                         {
                             "icon": "react.png",
@@ -115,6 +124,12 @@
                         {
                             "desc": "If you want to contribute to our project and make it better, visit our github link.",
                             "links": "https://github.com/recraftrelic/recraft-react-native-shopping-app"
+                        }
+                    ],
+                    "documentation": [
+                        {
+                            "desc": "If you want to read our project documentation then visit below link.",
+                            "links": "https://documentation.recraftrelic.com/shoppingapp/"
                         }
                     ],
                     "playstore": [
