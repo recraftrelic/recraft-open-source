@@ -1,0 +1,33 @@
+stages:
+    - build
+    - deploy
+build:
+    stage: build
+    tags: 
+        - my-tag
+        - another-tag
+    script:
+        - echo "Building deploy package"
+        - yarn install
+        - yarn build
+        - mkdir ../build
+        - cp -rv build/* ../build/
+        - echo "Build successful"
+    artifacts:
+        expire_in: 1 hour
+        paths:
+            - build
+deploy_production:
+    stage: deploy
+    tags: 
+      - my-tag
+      - another-tag
+    script:
+        - echo "Deploying to server"
+        - cp -rv build/* /var/www/html/recraft-open-source/
+        - echo "Deployed"
+    environment:
+        name: production
+        url: https://opensource.recraftrelic.com/
+    only:
+        - master
