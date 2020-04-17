@@ -93,6 +93,11 @@
   margin-top: 20px;
 }
 
+button.navbar-burger.burger {
+  background: none;
+  border: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

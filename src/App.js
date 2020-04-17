@@ -22,11 +22,11 @@ function App() {
                 </>
               })
             }
-            <a onClick={() => {setIsActive(!isActive)}} role="button" href="!#" rel="noopener noreferrer" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTop">
+            <button onClick={() => {setIsActive(!isActive)}} className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTop">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
-            </a>
+            </button>
           </div>
           <div id="navbarTop" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
             <div className="navbar-end">
