@@ -47,6 +47,15 @@ export default class ProjectItems extends React.Component
                     })
                 }
                 {
+                    this.props.items.documentation.map((data,index) => {
+                      return <>
+                        <p className="bd-notification is-primary has-text-left doc-link">{data.desc}<br></br>
+                          <a target="_blank" className="is-text" href={data.links}>{data.links}</a>
+                        </p>
+                      </>
+                    })
+                }
+                {
                     this.props.items.playstore.map((data,index) => {
                       return <>
                       <a target="_blank" className="is-text" href={data.links}>
