@@ -10,8 +10,6 @@ build:
         - echo "Building deploy package"
         - yarn install
         - yarn build
-        - mkdir ../build
-        - cp -rv build/* ../build/
         - echo "Build successful"
     artifacts:
         expire_in: 1 hour
