@@ -8,7 +8,8 @@
 
 * React native chat app boilerplate - [https://github.com/recraftrelic/react-native-chat-app-boilerplate](https://github.com/recraftrelic/react-native-chat-app-boilerplate)
 * React native base app seed - [https://github.com/recraftrelic/recraft-react-native-base-app-seed](https://github.com/recraftrelic/recraft-react-native-base-app-seed)
-* React multi messenger app electron boilerplate - [https://github.com/recraftrelic/multi-messenger-app](https://github.com/recraftrelic/multi-messenger-app)
+* React native shopping app boilerplate - [https://github.com/recraftrelic/recraft-react-native-shopping-app](https://github.com/recraftrelic/recraft-react-native-shopping-app)
+* React native dating app boilerplate - [https://github.com/recraftrelic/recraft-react-native-dating-app](https://github.com/recraftrelic/recraft-react-native-dating-app)
 
 ## Steps to Run the Open Source Project
 
