@@ -138,6 +138,43 @@
                             "links": "https://play.google.com/store/apps/details?id=com.recraftreactnativebaseapp"
                         }
                     ]
+                },
+                {
+                    "align": "right",
+                    "video": "dating-app",
+                    "image": "phone-case.png",
+                    "heading": "Recraft Dating App",
+                    "link": "https://github.com/recraftrelic/recraft-react-native-dating-app",
+                    "mainDesc": "This dating app is a boilerplate for any react native developer who wants to build a dating app.",
+                    "secondDesc": "The goal of this boilerplate is to provide a fully functional dating app which can be reused with very little to no modification.",
+                    "technologies": [
+                        {
+                            "icon": "react.png",
+                            "link": "https://reactnative.dev/"
+                        },
+                        {
+                            "icon": "js.png",
+                            "link": "https://nodejs.org/en/"
+                        }
+                    ],
+                    "contribution": [
+                        {
+                            "desc": "If you want to contribute to our project and make it better, visit our github link.",
+                            "links": "https://github.com/recraftrelic/recraft-react-native-dating-app"
+                        }
+                    ],
+                    "documentation": [
+                        {
+                            "desc": "If you want to read our project documentation then visit below link.",
+                            "links": ""
+                        }
+                    ],
+                    "playstore": [
+                        {
+                            "badge": "badge.png",
+                            "links": ""
+                        }
+                    ]
                 }
             ]
         }
@@ -188,7 +225,7 @@
                 {
                     "image": "puran.jpg",
                     "title": "Puran Chand",
-                    "bio": "I am Frontend Developer, designer and definitely a tech enthusiast. Technology is the key point of my professional career, but it’s my oldest hobby and passion over the years.",
+                    "bio": "I am Frontend Developer, designer & definitely a tech enthusiast. Technology is the key point of my professional career, but it’s my oldest hobby & passion over years.",
                     "socialIcons": [
                         {
                             "icon": "fa fa-github",
