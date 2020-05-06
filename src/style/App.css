@@ -189,6 +189,14 @@ button.navbar-burger.burger {
   .column.is-4 {
     width: 80%;
   } 
+  .column.is-8.is-pulled-right {
+    float: left !important;
+    width: 100% !important;
+  }
+  p.bd-notification.is-primary.has-text-left.doc-link a.is-text {
+    word-break: break-word;
+    padding-right: 20;
+  }
   .outer-div {
     border-radius: 50px;
   }
