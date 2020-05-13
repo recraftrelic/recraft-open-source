@@ -22,7 +22,7 @@ deploy_production:
       - another-tag
     script:
         - echo "Deploying to server"
-        - cp -rv build/ /var/www/html/recraft-open-source/
+        - cp -rv build/* /var/www/html/recraft-open-source/
         - echo "Deployed"
     environment:
         name: production
