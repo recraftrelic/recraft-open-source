@@ -100,7 +100,7 @@ function App() {
               <p className="title is-2">{data.title}</p>
               <p className="subtitle is-6">{data.subTitle}</p>
               <p className="subtitle is-6">{data.contribution.desc}</p>
-              <a href={data.contribution.link}>{data.contribution.link}</a>
+              <a href={data.contribution.link} target="_blank" rel="noopener noreferrer">{data.contribution.link}</a>
             </div>
           </div>
         </div>)
