@@ -182,7 +182,7 @@
     "threeColumnSection": [
         {
             "title": "Open Time Tracker",
-            "subTitle": "An open source time tracker",
+            "subTitle": "An open source time tracker. A small minimal library which is used for tracking the client work.",
             "contribution": {
                 "desc": "If you want to contribute to our project and make it better, visit our github link.",
                 "link": "https://github.com/manojsinghnegiwd/open-time-tracker"
@@ -190,7 +190,7 @@
         },
         {
             "title": "Highlight element",
-            "subTitle": "An open source highlight element",
+            "subTitle": "An open source highlight element. A small minimal library which highlight the given element.",
             "contribution": {
                 "desc": "If you want to contribute to our project and make it better, visit our github link.",
                 "link": "https://github.com/manojsinghnegiwd/highlight-element-js"
@@ -198,7 +198,7 @@
         },
         {
             "title": "Replace text node",
-            "subTitle": "An open source replace text node",
+            "subTitle": "An open source replace text node. A small minimal library which Find and replace text nodes.",
             "contribution": {
                 "desc": "If you want to contribute to our project and make it better, visit our github link.",
                 "link": "https://github.com/manojsinghnegiwd/replaceTextNode"
