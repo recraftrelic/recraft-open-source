@@ -179,6 +179,32 @@
             ]
         }
     ],
+    "threeColumnSection": [
+        {
+            "title": "Open Time Tracker",
+            "subTitle": "An open source time tracker",
+            "contribution": {
+                "desc": "If you want to contribute to our project and make it better, visit our github link.",
+                "link": "https://github.com/manojsinghnegiwd/open-time-tracker"
+            }
+        },
+        {
+            "title": "Highlight element",
+            "subTitle": "An open source highlight element",
+            "contribution": {
+                "desc": "If you want to contribute to our project and make it better, visit our github link.",
+                "link": "https://github.com/manojsinghnegiwd/highlight-element-js"
+            }
+        },
+        {
+            "title": "Replace text node",
+            "subTitle": "An open source replace text node",
+            "contribution": {
+                "desc": "If you want to contribute to our project and make it better, visit our github link.",
+                "link": "https://github.com/manojsinghnegiwd/replaceTextNode"
+            }
+        }
+    ],
     "teamSection": [
         {
             "heading": "Team Members",
