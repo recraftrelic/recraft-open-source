@@ -92,6 +92,21 @@ function App() {
         })
       }
 
+    <section className="project-column">
+      {
+        dynamicData.threeColumnSection.map((data, index) => <div className={`card card-${index}`} key={index}>
+          <div className="card-content">
+            <div className="content">
+              <p className="title is-2">{data.title}</p>
+              <p className="subtitle is-6">{data.subTitle}</p>
+              <p className="subtitle is-6">{data.contribution.desc}</p>
+              <a href={data.contribution.link} target="_blank" rel="noopener noreferrer">{data.contribution.link}</a>
+            </div>
+          </div>
+        </div>)
+      }
+      </section>
+
       {
         dynamicData.teamSection.map((data,index) => {
           return <>
