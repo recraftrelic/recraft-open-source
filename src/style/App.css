@@ -252,6 +252,23 @@ button.navbar-burger.burger {
   margin-right: 20px;
 }
 
+.project-column .content .subtitle.is-6 {
+  font-size: 1.25rem!important;
+}
+
+.project-column .content p.subtitle.desc {
+  font-size: 16px;
+}
+
+.project-column .content .columns.is-gap.extra-space {
+  justify-content: center;
+}
+
+.project-column .content figure {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 @media only screen and (max-width: 992px) {
   .project-column {
     margin: 20px 20px;
@@ -262,4 +279,9 @@ button.navbar-burger.burger {
     margin-right: 0px;
     margin-bottom: 20px;
   }
+
+  .project-column .content .columns.is-gap.extra-space {
+    display: flex;
+  }
+  
 }

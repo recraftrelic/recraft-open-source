@@ -186,7 +186,21 @@
             "contribution": {
                 "desc": "If you want to contribute to our project and make it better, visit our github link.",
                 "link": "https://github.com/manojsinghnegiwd/open-time-tracker"
-            }
+            },
+            "technologies": [
+                {
+                    "icon": "react.png",
+                    "link": "https://reactnative.dev/"
+                },
+                {
+                    "icon": "js.png",
+                    "link": "https://nodejs.org/en/"
+                },
+                {
+                    "icon": "elctron.png",
+                    "link": "https://www.electronjs.org/"
+                }
+            ]
         },
         {
             "title": "Highlight element",
@@ -194,7 +208,13 @@
             "contribution": {
                 "desc": "If you want to contribute to our project and make it better, visit our github link.",
                 "link": "https://github.com/manojsinghnegiwd/highlight-element-js"
-            }
+            },
+            "technologies": [
+                {
+                    "icon": "js.png",
+                    "link": "https://nodejs.org/en/"
+                }
+            ]
         },
         {
             "title": "Replace text node",
@@ -202,7 +222,13 @@
             "contribution": {
                 "desc": "If you want to contribute to our project and make it better, visit our github link.",
                 "link": "https://github.com/manojsinghnegiwd/replaceTextNode"
-            }
+            },
+            "technologies": [
+                {
+                    "icon": "js.png",
+                    "link": "https://nodejs.org/en/"
+                }
+            ]
         }
     ],
     "teamSection": [
