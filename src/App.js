@@ -99,7 +99,18 @@ function App() {
             <div className="content">
               <p className="title is-2">{data.title}</p>
               <p className="subtitle is-6">{data.subTitle}</p>
-              <p className="subtitle is-6">{data.contribution.desc}</p>
+              <div className="columns is-gap extra-space">
+                {
+                    data.technologies.map((data,index) => {
+                        return <div className="techno" key={index}>
+                            <figure className="image is-32x32">
+                              <a target="_blank" rel="noopener noreferrer" href={data.link}><img src={require(`./images/${data.icon}`)} alt="technologies"/></a>
+                            </figure>
+                          </div>
+                    })
+                }
+              </div>
+              <div className="subtitle desc">{data.contribution.desc}</div>
               <a href={data.contribution.link} target="_blank" rel="noopener noreferrer">{data.contribution.link}</a>
             </div>
           </div>
