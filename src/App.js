@@ -110,7 +110,6 @@ function App() {
                     })
                 }
               </div>
-              <div className="subtitle desc">{data.contribution.desc}</div>
               <a href={data.contribution.link} target="_blank" rel="noopener noreferrer">{data.contribution.link}</a>
             </div>
           </div>
