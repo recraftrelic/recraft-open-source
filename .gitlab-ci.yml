@@ -1,31 +1,32 @@
 stages:
-    - build
+    - publish
     - deploy
-build:
-    stage: build
-    tags: 
-        - my-tag
-        - another-tag
+  variables:
+    TAG_LATEST: $REGISTRY/recraftopensource/$CI_COMMIT_REF_NAME:latest
+    TAG_COMMIT: $REGISTRY/recraftopensource/$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA
+  publish:
+    image: docker:latest
+    stage: publish
+    services:
+      - docker:dind
     script:
-        - echo "Building deploy package"
-        - yarn install
-        - yarn build
-        - echo "Build successful"
-    artifacts:
-        expire_in: 1 hour
-        paths:
-            - build
-deploy_production:
-    stage: deploy
-    tags: 
-      - my-tag
-      - another-tag
-    script:
-        - echo "Deploying to server"
-        - cp -rv build/* /var/www/html/recraft-open-source/
-        - echo "Deployed"
-    environment:
-        name: production
-        url: https://opensource.recraftrelic.com/
+      - docker build -t $TAG_COMMIT -t $TAG_LATEST .
+      - docker login -u $DOCKER_USER -p $DOCKER_PS $REGISTRY
+      - docker push $TAG_COMMIT
+      - docker push $TAG_LATEST
     only:
-        - master
+      - master
+  deploy:
+    image: alpine:latest
+    stage: deploy
+    tags:
+      - deployment
+    script:
+      - chmod og= $ID_RSA
+      - apk update && apk add openssh-client
+      - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker login -u $DOCKER_USER -p $DOCKER_PS $REGISTRY"
+      - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker pull $TAG_COMMIT"
+      - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker container rm -f recraftopensource || true"
+      - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker run -d -p 3001:80 --name recraftopensource $TAG_COMMIT"
+    only:
+      - master
